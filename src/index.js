@@ -1,12 +1,5 @@
-import "./style.css";
+import initializeWebsite from "./website.js";
 
-function printing() {
-  const el = document.createElement("div");
+initializeWebsite();
 
-  // el.textContent = "Hello I am Dannyboi";
-
-  console.log("is this working?");
-  return el;
-}
-
-document.body.appendChild(printing());
+console.log("is this working?");

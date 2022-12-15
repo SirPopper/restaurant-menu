@@ -86,10 +86,14 @@ body {
   margin: 50px 50px;
 }
 
+.grid {
+  display: grid;
+}
+
 /* Home */
 .home {
-  /* display: grid */
-  display: none;
+  display: grid;
+
   flex-direction: column;
 }
 
