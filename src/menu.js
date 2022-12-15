@@ -48,10 +48,16 @@ export default function createMenu() {
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     ["Spaghetti", "Sauce", "Bacon"]
   );
+  const item4 = createMenuItem(
+    "carbonara",
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    ["Spaghetti", "Sauce", "Bacon"]
+  );
 
   menu.appendChild(item1);
   menu.appendChild(item2);
   menu.appendChild(item3);
+  menu.appendChild(item4);
 
   return menu;
 }

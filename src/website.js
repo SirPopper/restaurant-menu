@@ -3,9 +3,33 @@ import createMenu from "./menu.js";
 import createContact from "./contact.js";
 
 function createHeader() {
-  const githubEl = createEl("div", "none", "Github");
-  const headerEl = createEl("div", "header", "RESTAURANT XYZ");
-  const socialEl = createEl("div", "none", "Socials");
+  //create Github Link
+  const githubEl = createEl("div", "links", "");
+  const linkgithub = createEl("a", "none", "Github");
+  linkgithub.setAttribute("href", "https://github.com/SirPopper");
+  linkgithub.setAttribute("target", "_blank");
+  githubEl.appendChild(linkgithub);
+
+  //create Restaurant title
+  const headerEl = createEl("div", "header", "WINTERFUL RESTAURANT");
+  headerEl.addEventListener("click", () => {
+    const home = document.querySelector(".home");
+    const menu = document.querySelector(".menu");
+    const contact = document.querySelector(".contact");
+    home.style.display = "grid";
+    menu.style.display = "none";
+    contact.style.display = "none";
+  });
+
+  //social button
+  const socialEl = createEl("div", "links", "");
+  const socialLink = createEl("a", "none", "Socials");
+  socialLink.setAttribute(
+    "href",
+    "https://www.linkedin.com/in/daniel-handojo-b46563165/"
+  );
+  socialLink.setAttribute("target", "_blank");
+  socialEl.appendChild(socialLink);
 
   const headerContainerEl = createEl("div", "header-container", "");
   headerContainerEl.appendChild(githubEl);

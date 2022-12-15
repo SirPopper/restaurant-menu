@@ -15,7 +15,7 @@ export default function createContact() {
   const address = createEl(
     "div",
     "address",
-    " Melbourne Boulevard <br /> Nonaffordable Food 2 <br /> 11111 Disney Land"
+    `Melbourne Boulevard <br /> Nonaffordable Food 2 <br /> 11111 Disney Land`
   );
 
   contact.appendChild(contactTitle);

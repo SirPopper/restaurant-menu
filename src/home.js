@@ -9,7 +9,7 @@ function createEl(el, classList, content) {
 }
 
 export default function createHome() {
-  const homeTitle = createEl("div", "home-title", "Lorem Ipsum");
+  const homeTitle = createEl("div", "home-title", "Cozy & Delicious");
   const homeContent = createEl(
     "div",
     "home-content",
@@ -17,7 +17,7 @@ export default function createHome() {
   );
   const imgContainer = createEl("div", "img-container", "");
   const imgArt = document.createElement("img");
-  imgArt.src = "../src/edible-art.jpg";
+  imgArt.src = "../src/winter.jpg";
   imgArt.classList.add("home-pic");
   imgContainer.appendChild(imgArt);
 
